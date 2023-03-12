@@ -86,5 +86,8 @@ Safe to add and remove from existing saves.
 
 # Change Log 
 
+## 1.1.0
+* Fixed bookmark allowing travel when not valid.  At night with no light, overloaded, etc.
+
 ## 1.0.0
 * Release
