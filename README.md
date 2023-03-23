@@ -1,9 +1,6 @@
 
 ![Alt text](media/Card%20Image.png)
 
-# v1.04 Note
-This is only compatible with the 1.04 beta called "updatebranch" in Steam.
-
 # Bookmark Travel
 Quickly transition to a location or shelter by double clicking the bookmark for that card.  Combine with "Instant Transition" mod to move in and out of shelters instantly with a double tap.
 
