@@ -11,20 +11,31 @@ For example: To enter a shed quickly, set the shed to bookmark 3.  When tapping 
 A single key press for the bookmark moves the view to the card, which is the normal game's bookmark operation.
 
 The following options can be configured:
-* Double click or single click activation.
+* Double press, single press, or holding down a bookmark key to travel.
 * Immediately transit or show the card's dialog instead.
-* The double click time.
-
+* Activation time
+    * For double click, how quickly a key must be pressed twice to activate.
+    * For hold mode, how long a key must be pressed to activate.
 
 # Settings
 |Name|Default|Description|
 |--|--|--|
-|DoubleClickMilliseconds|250|The maximum milliseconds for a key press to be considered a double click|
-|UseDoubleClick|true|If true, requires the bookmark hotkey to be pressed twice to activate.  Otherwise a single press will activate.|
-|ShowCardDialog|false|If true, will show the information dialog for the card.  If false, will instantly travel|
+|DoubleClickMilliseconds|250|The maximum milliseconds for a key press to be considered a double click.  If the TravelMode is set to Hold, then this is how long the key must be held down to activate.|
+|TravelMode|DoubleClick|Determines if a single click, double click, or holding a key will invoke a travel.  See Travel Mode Options below.|
+|ShowCardDialog|false|If true, will show the information dialog for the card instead of traveling.  If false, will instantly travel.|
+
+
+## Travel Mode Options
+
+|Name|Description||
+|--|--|--|
+|SingleClick|Pressing a key will immediately travel.|
+|DoubleClick|Double pressing a key within the DoubleClickMilliseconds value will travel.|
+|Hold|Continuously holding a key for DoubleClickMilliseconds will travel.|
+
 
 # Changing the Configuration
-All options are contained in the config file which is located at ```<Steam Directory>\steamapps\common\Card Survival Tropical Island\BepInEx\config\CardSurvival-BookmarkTravel.cfg```.
+All options are contained in the config file which is located at ```<Steam Directory>\steamapps\common\Card Survival Tropical Island\BepInEx\config\BookmarkTravel.cfg```.
 
 The .cfg file will not exist until the mod is installed and then the game is run.
 
@@ -82,6 +93,10 @@ Safe to add and remove from existing saves.
 <a href="https://www.flaticon.com/free-icons/number" title="number icons">Number icons created by Freepik - Flaticon</a>
 
 # Change Log 
+
+## 1.2.0
+* Supports holding a key.
+* Supports upgrading previous config to new TravelMode option.
 
 ## 1.1.0
 * Fixed bookmark allowing travel when not valid.  At night with no light, overloaded, etc.
