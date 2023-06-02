@@ -18,6 +18,7 @@ The following options can be configured:
     * For hold mode, how long a key must be pressed to activate.
 
 # Settings
+
 |Name|Default|Description|
 |--|--|--|
 |DoubleClickMilliseconds|250|The maximum milliseconds for a key press to be considered a double click.  If the TravelMode is set to Hold, then this is how long the key must be held down to activate.|
@@ -27,8 +28,8 @@ The following options can be configured:
 
 ## Travel Mode Options
 
-|Name|Description||
-|--|--|--|
+|Name|Description|
+|--|--|
 |SingleClick|Pressing a key will immediately travel.|
 |DoubleClick|Double pressing a key within the DoubleClickMilliseconds value will travel.|
 |Hold|Continuously holding a key for DoubleClickMilliseconds will travel.|
